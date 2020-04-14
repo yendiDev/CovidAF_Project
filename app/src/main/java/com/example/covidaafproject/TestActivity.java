@@ -1,32 +1,27 @@
 package com.example.covidaafproject;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        setContentView(R.layout.activity_test);
 
         setNavigation();
     }
 
     private void setNavigation(){
         BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);
-        navigationView.setSelectedItemId(R.id.navigation_home);
+        navigationView.setSelectedItemId(R.id.navigation_test);
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -34,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
 
                     case R.id.navigation_home:
+                        Intent homeIntent = new Intent(getApplicationContext(), MainActivity.class);
+                        homeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(homeIntent);
+                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.navigation_report:
@@ -44,10 +43,6 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.navigation_test:
-                        Intent testIntent = new Intent(getApplicationContext(), TestActivity.class);
-                        testIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(testIntent);
-                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.navigation_more:
@@ -62,4 +57,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">CovidaAF Project</string>
+    <string name="app_name">CovidaAF</string>
+    <string name="main_welcom_message">Welcom to CovidAF</string>
+    <string name="main_edit_text_hint">search by country</string>
+    <string name="main_country_text">Name of Country</string>
+    <string name="navigation_home_text">Home</string>
+    <string name="navigation_report_text">Report Case</string>
+    <string name="navigation_test_text">Self Test</string>
+    <string name="navigation_more_text">More</string>
+    <string name="main_confirmed">Confitmed Cases</string>
+    <string name="main_confirmed_number">000</string>
+    <string name="main_confirmed2">Confirmed</string>
+    <string name="main_deaths">Deaths</string>
+    <string name="main_recovered">Recovered</string>
+    <string name="main_confirmed3">Confirmed</string>
+    <string name="main_confirmed_number2">0000</string>
+    <string name="main_global_time">Last Updated:</string>
+    <string name="main_global_text">Global Update</string>
+    <string name="main_global_time_">Time goes here</string>
 </resources>
