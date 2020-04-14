@@ -2,6 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
@@ -35,4 +41,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.github.mew:coronavirus:0.2.0'
 }
