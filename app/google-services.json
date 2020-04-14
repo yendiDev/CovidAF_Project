@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "324696685941",
+    "firebase_url": "https://covidaaf-project-db.firebaseio.com",
+    "project_id": "covidaaf-project-db",
+    "storage_bucket": "covidaaf-project-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324696685941:android:223e09f61aad754e67273c",
+        "android_client_info": {
+          "package_name": "com.example.covidaafproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324696685941-nour6ev1g1u038no7817li0adco28ivh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.covidaafproject",
+            "certificate_hash": "bb1709863f05532a1bdb9b411907de29b9e6dc7b"
+          }
+        },
+        {
+          "client_id": "324696685941-ftvlrjul3vgos6rva96l192b1utin677.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzIyfVncjhzB7IPjyuKKUo3DYAEzqrlZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324696685941-ftvlrjul3vgos6rva96l192b1utin677.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
